@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".spngtypes">
+
+    <ImageView
+        android:id="@+id/ivbk"
+        android:layout_width="51dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back_arrow" />
+
+    <ImageView
+        android:id="@+id/ivac"
+        android:layout_width="102dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="80dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvpn"
+        app:srcCompat="@drawable/access" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Select category to continue shoping"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivbk" />
+
+    <TextView
+        android:id="@+id/tvac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accessories"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/ivac"
+        app:layout_constraintStart_toStartOf="@+id/ivac"
+        app:layout_constraintTop_toBottomOf="@+id/ivac" />
+
+    <ImageView
+        android:id="@+id/ivpn"
+        android:layout_width="102dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="100dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:srcCompat="@drawable/phone" />
+
+    <TextView
+        android:id="@+id/tvpn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile phones"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/ivpn"
+        app:layout_constraintStart_toStartOf="@+id/ivpn"
+        app:layout_constraintTop_toBottomOf="@+id/ivpn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

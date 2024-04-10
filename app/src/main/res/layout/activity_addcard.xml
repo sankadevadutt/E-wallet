@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".addcard">
+
+
+    <Button
+        android:id="@+id/btnsave"
+        android:layout_width="wrap_content"
+        android:layout_height="63dp"
+        android:text="Save"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etbalance" />
+
+    <ImageView
+        android:id="@+id/ivback5"
+        android:layout_width="51dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back_arrow" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="Add your card details bellow to save in the wallet"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivback5" />
+
+    <EditText
+        android:id="@+id/etbalance"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Add Balance"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textColorHint="#989898"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etname" />
+
+    <EditText
+        android:id="@+id/etname"
+        android:layout_width="358dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Add card holders name"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#989898"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <EditText
+            android:id="@+id/etexpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="47dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#000000"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Add expiry date"
+            android:inputType="date"
+            android:textColor="#000000"
+            android:textColorHint="#989898" />
+
+        <EditText
+            android:id="@+id/etcvv"
+            android:layout_width="112dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="#000000"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Add cvv"
+            android:inputType="numberPassword"
+            android:textColor="#000000"
+            android:textColorHint="#989898" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="57dp"
+            android:layout_height="43dp"
+            app:srcCompat="@drawable/ic_card" />
+
+        <EditText
+            android:id="@+id/etcardnum"
+            android:layout_width="300dp"
+            android:layout_height="47dp"
+            android:backgroundTint="#000000"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Add card number"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:textColorHint="#989898" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
